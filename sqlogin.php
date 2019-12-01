@@ -1,4 +1,5 @@
 <?php //login.php
+//test
 $db_hostname='localhost';
 $db_database='********';
 $db_username='********';
