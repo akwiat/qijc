@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="139584810606-7f2h9499dsjd8qn183dqskll2lpr4kup.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="139584810606-dpmpddfiej6qngtb7rck6qr7t826giqa.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
