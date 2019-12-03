@@ -3,6 +3,7 @@ require_once 'vendor/autoload.php';
 ini_set('session.use_only_cookies', 1); //Deters session hijacking, if I understand.
 session_start();
 echo "starting";
+echo $_POST;
 if(isset($_POST['token']) && !isset($_SESSION['username'])) {
   $CLIENT_ID = "139584810606-lpct333ou0h73fm6fc1dqnj9fs9om2b6.apps.googleusercontent.com";
   $t = $_POST['token'];
