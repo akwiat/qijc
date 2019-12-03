@@ -8,7 +8,7 @@ if(isset($_POST['token']) && !isset($_SESSION['username'])) {
   $t = $_POST['token'];
   echo "received token";
   $client = new Google_Client(['client_id' => $CLIENT_ID]);  // Specify the CLIENT_ID of the app that accesses the backend
-  $payload = $client->verifyIdToken($id_token);
+  $payload = $client->verifyIdToken($t);
   echo "reached ";
   if ($payload) {
     echo "payload: ";
