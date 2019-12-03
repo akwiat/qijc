@@ -14,7 +14,7 @@ if(isset($_POST['token']) && !isset($_SESSION['username'])) {
   echo "reached ";
   if ($payload) {
     echo "payload: ";
-    echo $payload;
+    var_dump($payload);
     $userid = $payload['sub'];
     // If request specified a G Suite domain:
     //$domain = $payload['hd'];
