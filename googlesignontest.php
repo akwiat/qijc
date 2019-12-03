@@ -23,6 +23,7 @@
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
+        var xhttp = new XMLHttpRequest();
         xhttp.open("POST", "start.php", true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send("token="+id_token);
