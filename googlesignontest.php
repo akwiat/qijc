@@ -1,4 +1,5 @@
 <?php
+require_once 'utils.php';
 require_once 'vendor/autoload.php';
 ini_set('session.use_only_cookies', 1); //Deters session hijacking, if I understand.
 session_start();
@@ -13,9 +14,11 @@ if(isset($_POST['token']) && !isset($_SESSION['username'])) {
   $payload = $client->verifyIdToken($t);
   echo "reached ";
   if ($payload) {
+    html_header();
     echo "payload: ";
     var_dump($payload);
     $userid = $payload['sub'];
+    html_footer();
     // If request specified a G Suite domain:
     //$domain = $payload['hd'];
   } else {
