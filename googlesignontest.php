@@ -47,7 +47,7 @@ if(isset($_POST['token']) && !isset($_SESSION['username'])) {
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "", true);
+        xhttp.open("POST", "", false);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send("token="+id_token);
         console.log("sent")
